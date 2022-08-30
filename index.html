@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front end mentor</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .vp{
+            margin-left: 5%;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .top-container{
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .left{
+            background-color: #fff;
+            padding: 25px 25px 25px 15px;
+            justify-content: center;
+            text-align: justify;
+            /* width: 45%; */
+            /* margin: auto; */
+        }
+        .right{
+            background-color: blueviolet;
+            /* width: 40%; */
+            margin: auto;
+            display: flex;
+            flex-direction: row-reverse;
+            align-self: flex-end;
+        }
+        .title{
+            font-size: 50px;
+            font-weight: bolder;
+            margin-bottom: 20px;
+            color: rgb(19, 19, 97);
+        }
+        .description{
+            font-size: smaller;
+            font-weight: lighter;
+            color: rgb(19, 19, 97);
+            margin-bottom: 20px;
+            line-height: 25px;
+        }
+        .but1{
+            border-radius: 20px;
+            padding: 10px 15px 10px 15px;
+            font-size: xx-small;
+            border: none;
+            color: #fff;
+            background: linear-gradient(344deg, rgb(223, 86, 225) 0%, rgb(226, 70, 192) 41%, rgba(255,162,0,1) 100%);
+            height:fit-content;       
+         }  
+        .bottom-container{
+            /* background-color: aqua; */
+            margin-top: 10%;
+            display: grid;
+            height: 500px;
+            flex-wrap: wrap;
+            align-content: end;
+            grid-template-columns: 350px 350px 350px;
+            gap: 10px;
+        }
+        .one{
+            background: linear-gradient(344deg, rgb(223, 86, 225) 0%, rgb(226, 70, 192) 41%, rgba(255,162,0,1) 100%);
+            /* position: relative; */
+            display: flex;
+            /* text-align: justify; */
+            justify-content: center;
+            /* align-self: center; */
+            font-size: xx-large;
+            color: #fff;
+            width: 90%;
+            height: 200px;
+            margin: 10px;
+            padding: 25px 5px 5px 15px;
+            border-radius: 15px;
+            /* color: #fff;
+            height: 200px;
+            text-align: justify;
+            justify-content: center;
+            display: flex;
+            align-self: center;    
+            margin: 10px;
+            padding: 25px 5px 5px 15px;
+            border-radius: 15px;
+            font-size: xx-large; */
+        }
+        .head{
+            background-color: #fff;
+            position: relative;
+            width: 90%;
+            height: 200px;
+            margin: 10px;
+            padding: 25px 5px 5px 15px;
+            border-radius: 15px;
+            box-shadow: -20px 15px 40px rgba(0,0,0,0.1);
+        }
+        h3{
+            font-size: x-large;
+            font-weight: bolder;
+            margin-bottom: 10px;
+            line-height: 50px;
+            color: rgb(19, 19, 97);
+        }
+        h6{
+            font-size: smaller;
+            font-weight: lighter;
+            color: rgb(19, 19, 97);
+            margin-bottom: 10px;
+            line-height: 25px;
+        }
+        .but2{
+            position: absolute;
+            border: none;
+            background: none;
+            font-weight: bold;
+            color: rgb(234, 32, 156);
+            padding: 0;
+        }
+        .start{
+            /* background-color: aqua; */
+            padding: 0px 25px 25px 20px;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 75px;
+            align-items: center;
+               
+        }
+        .but3{
+            border-radius: 20px;
+            padding: 10px 25px 10px 25px;
+            font-weight: bold;
+            font-size: x-small;
+            border: none;
+            color: #fff;
+            background-color: rgb(19, 19, 97);
+        }
+        .end{
+            background-color: rgb(19, 19, 97);
+            margin: 10% 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 75px;
+            align-items: center;
+        }
+        .end > h3{
+            font-size: medium;
+            margin-left: 7%;
+            color: #fff;
+        }
+        .end > .but1{
+            margin-right: 10%;
+            background: linear-gradient(360deg, rgb(109, 86, 46) 0%, rgb(136, 52, 181) 41%, rgb(90, 1, 255) 100%);
+            font-weight: bold;
+        }
+        .circle{
+            position: absolute;
+            top: -5%;
+            left: 5%;
+            width: 35px;
+            height: 35px;
+            /* -webkit-border-radius: 25px; */
+            /* -moz-border-radius: 25px; */
+            border-radius: 25px;
+            background: linear-gradient(344deg, rgb(223, 86, 225) 0%, rgb(226, 70, 192) 41%, rgba(255,162,0,1) 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="vp">
+        <header class="start">
+            <h3>skilled</h3>
+            <button class="but3">Get Started</button>
+        </header>
+        <div class="top-container">
+            <div class="left">
+                <div class="title">
+                    Maximize skill, <br>
+                    minimize budget
+                </div>
+                <div class="description">
+                    Our modern courses across a range of in-demand <br>
+                    skills will give you the knowledge you need to live <br>
+                    the life you want.
+                </div>
+                <button class="but1">Get Started</button>
+            </div>
+            <div class="right">
+                <!-- <img src="https://th.bing.com/th/id/OIP.uAYYw1UQqS_uQI0sx2Xd-gHaHa?w=171&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt=""> -->
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="one">
+                Check out our <br> 
+                most popular <br> 
+                courses!
+            </div>
+            <div class="head two">
+                <div class="circle"></div>
+                <h3>
+                    Animation
+                </h3>
+                <h6>
+                    Learn the latest animation <br>
+                    techniques to create stunning <br>
+                    motion design and captivate <br>
+                    your audience.
+                </h6>
+                <button class="but2">Get Started</button>
+            </div>
+            <div class="head three">
+                <div class="circle"></div>
+                <h3>
+                    Design
+                </h3>
+                <h6>
+                    Create beautiful, usable <br>
+                    interfaces to help shape the <br>
+                    future of how the web looks. <br><br>
+                </h6>
+                <button class="but2">Get Started</button>
+            </div>
+            <div class="head four">
+                <div class="circle"></div>
+                <h3>
+                    Photography
+                </h3>
+                <h6>
+                    Explore critical fundamentals like <br>
+                    lighting, compostion, and focus <br>
+                    to capture exceptional photos. <br><br>
+                </h6>
+                <button class="but2">Get Started</button>
+            </div>
+            <div class="head five">
+                <div class="circle"></div>
+                <h3>
+                    Crypto
+                </h3>
+                <h6>
+                    All you need to know to get <br>
+                    started investing in crypto. Go <br>
+                    from beginner to advanced with <br>
+                    this 54 hour course.
+                </h6>
+                <button class="but2">Get Started</button>
+            </div>
+            <div class="head six">
+                <div class="circle"></div>
+                <h3>
+                    Business
+                </h3>
+                <h6>
+                    A step-by-step playbook to help <br>
+                    you start, scale, and sustain your <br>
+                    business without outside <br>
+                    investment.
+                </h6>
+                <button class="but2">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <footer class="end">
+        <h3>skilled</h3>
+        <button class="but1">Get Started</button>
+    </footer>
+</body>
+</html>
