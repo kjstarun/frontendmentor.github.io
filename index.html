@@ -11,32 +11,24 @@
             padding: 0;
         }
         .vp{
-            margin-left: 5%;
+            margin-left: 4%;
         }
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
         .top-container{
-            background-color: #fff;
+            background: transparent;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             flex-wrap: wrap;
         }
         .left{
-            background-color: #fff;
+            background: transparent;
+            margin-top: 15%;
             padding: 25px 25px 25px 15px;
-            justify-content: center;
+            justify-content: flex-start;
             text-align: justify;
-            /* width: 45%; */
-            /* margin: auto; */
-        }
-        .right{
-            background-color: blueviolet;
-            /* width: 40%; */
-            margin: auto;
-            display: flex;
-            flex-direction: row-reverse;
-            align-self: flex-end;
+            align-items: flex-start;
         }
         .title{
             font-size: 50px;
@@ -61,22 +53,18 @@
             height:fit-content;       
          }  
         .bottom-container{
-            /* background-color: aqua; */
             margin-top: 10%;
             display: grid;
             height: 500px;
             flex-wrap: wrap;
             align-content: end;
             grid-template-columns: 350px 350px 350px;
-            gap: 10px;
+            gap: 50px;
         }
         .one{
             background: linear-gradient(344deg, rgb(223, 86, 225) 0%, rgb(226, 70, 192) 41%, rgba(255,162,0,1) 100%);
-            /* position: relative; */
             display: flex;
-            /* text-align: justify; */
             justify-content: center;
-            /* align-self: center; */
             font-size: xx-large;
             color: #fff;
             width: 90%;
@@ -84,16 +72,6 @@
             margin: 10px;
             padding: 25px 5px 5px 15px;
             border-radius: 15px;
-            /* color: #fff;
-            height: 200px;
-            text-align: justify;
-            justify-content: center;
-            display: flex;
-            align-self: center;    
-            margin: 10px;
-            padding: 25px 5px 5px 15px;
-            border-radius: 15px;
-            font-size: xx-large; */
         }
         .head{
             background-color: #fff;
@@ -128,7 +106,8 @@
             padding: 0;
         }
         .start{
-            /* background-color: aqua; */
+            background: transparent;
+            position: absolute;
             padding: 0px 25px 25px 20px;
             width: 90%;
             display: flex;
@@ -136,7 +115,7 @@
             flex-wrap: wrap;
             height: 75px;
             align-items: center;
-               
+            z-index: 1;  
         }
         .but3{
             border-radius: 20px;
@@ -146,6 +125,7 @@
             border: none;
             color: #fff;
             background-color: rgb(19, 19, 97);
+            margin-right: 5%;
         }
         .end{
             background-color: rgb(19, 19, 97);
@@ -172,20 +152,23 @@
             left: 5%;
             width: 35px;
             height: 35px;
-            /* -webkit-border-radius: 25px; */
-            /* -moz-border-radius: 25px; */
             border-radius: 25px;
             background: linear-gradient(344deg, rgb(223, 86, 225) 0%, rgb(226, 70, 192) 41%, rgba(255,162,0,1) 100%);
+        }
+        img{
+            transform: rotate(180deg);
+            height: 500px;
+            width: 500px;
         }
     </style>
 </head>
 <body>
     <div class="vp">
-        <header class="start">
-            <h3>skilled</h3>
-            <button class="but3">Get Started</button>
-        </header>
         <div class="top-container">
+            <header class="start">
+                <h3>skilled</h3>
+                <button class="but3">Get Started</button>
+            </header>
             <div class="left">
                 <div class="title">
                     Maximize skill, <br>
@@ -199,7 +182,7 @@
                 <button class="but1">Get Started</button>
             </div>
             <div class="right">
-                <!-- <img src="https://th.bing.com/th/id/OIP.uAYYw1UQqS_uQI0sx2Xd-gHaHa?w=171&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt=""> -->
+                <img src="https://images.unsplash.com/photo-1556139943-4bdca53adf1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
             </div>
         </div>
         <div class="bottom-container">
